@@ -33,6 +33,7 @@ audioOn.addEventListener('click', function(){
 
     
     if(audiobtn = "swap-on"){
+        audio.volume = 0.2;
         audio.play();
         console.log(audiobtn);
     

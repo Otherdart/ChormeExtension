@@ -1,7 +1,5 @@
 body{
-    background-color: black;
-    background-size:cover;
-
+    margin: 0;
 }
 
 
@@ -15,50 +13,43 @@ main {
     position: relative;
     top: 12vh;
     margin: auto;
-    color: rgba(255, 255, 255, .94);
-    box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .2) inset, 0 1px 1px rgba(0, 0, 0, .3);
-    text-shadow: 0 1px 1px rgba(25, 25, 25, .5);
-    background: rgba(255, 255, 255, .06);
     overflow: hidden;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-
-    
-    /* background-image: url(../img/Farminwinterseason.jpg); */
-   
-
-    /* &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        filter: blur(6px);
-  
-  } */
 }
-.imageanimation{
+
+.imageAnimation{
+
     position: absolute;
     left: 0px;
     top: 0px;
-    height: 500.25px;
-    width: 1080.25px;
-    /* object-fit: fill; */
-    animation-name: background;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    /* background-image: url(img/Farminwinterseason.jpg); */
-
+    bottom:0px;
     z-index: -1;
-
-
+    height: 500.25px;
+    width: 2081.25px;
+    object-fit: cover;
+    animation-name: background;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    
+    
 }
 
+@keyframes background{
+
+    0%   {object-position: 0;}
+    /* 25%  {left: 0%;}
+    50%  {left: 0%;} */
+    100% {object-position: 100%;}
+
+  }
+
 #volume {
+    position: relative;
+    top: 70px;
+    left: 100px;
     grid-column-start: 9;
     grid-column-end: 11;
     grid-row-start: 23;
@@ -70,17 +61,15 @@ main {
     width: 30px;
   }
 
-@keyframes background{
+#LocationInput{
 
-    0%   {left: -500px;}
-    25%  {left:-400px;}
-    50%  {left: -300px;}
-    100% {left: -200px;}
-
-  }
-
-
-
+    display: flex;
+    position:relative;
+    bottom: 30px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+}
 
 .QuestionContainer{
     position:relative;
@@ -88,8 +77,6 @@ main {
     top: 0px;
     width: 80%;
     height: 100px;
-    display: flex;
-    justify-content: center;
     flex-flow: row;
     background-color: rgba(255, 255, 255, .4);
     font-weight: bold;
@@ -97,17 +84,46 @@ main {
     overflow: hidden;
     box-shadow: 0px 0px 5px 2px;
     border: none;
-    /* background-color: transparent; */
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #43BD8E;
 }
 
-button{
+
+
+.buttonStorage > button:hover{
+color: #E1FEA4;
+opacity: 1;
+bottom: 10px;
+box-shadow: 0px 0px 5px 2px rgba(225, 254, 164, 2);
+transition: all .32s .28s ease-out;
+background-color: rgba(67, 189, 142, 0.1);
+filter: blur(5);
+
+}
+
+.buttonStorage{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    position: relative; 
+    top: 50px;
+    color: #43BD8E;
+
+}
+
+.buttonStorage > button{
     position: absolute;
     left: 0px;
     top: 0px;
     width: 90px;
     height: 50px;
-    color: #fff;
+    color: #43BD8E;
     padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
@@ -117,46 +133,11 @@ button{
     overflow: hidden;
     box-shadow: 0px 0px 5px 2px;
     border: none;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .8);
     border-radius: 5px;
     text-align: center;
+ 
 
-}
-
-
-button:hover{
-color: gray;
-opacity: 1;
-bottom: 10px;
-box-shadow: 0px 0px 5px 2px rgba(225, 254, 164, 2);
-transition: all .32s .28s ease-out;
-background-color: rgba(225, 254, 164, 0.1);
-filter: blur(5);
-
-}
-
-
-.buttonStorage{
-    
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    position: relative; 
-    top: 50px;
-   
 
 
 }
-/* button after {
-  content: "\00BB";
-  position: absolute;
-  opacity: 0;
-  font-size: 20px;
-  line-height: 40px;
-  top: 0;
-  right: -20px;
-  transition: 0.4s;
-} */
-
-

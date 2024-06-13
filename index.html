@@ -16,38 +16,21 @@
 <body>
 
   <main>
+
+    
+    <!-- <input id="LocationInput" placeholder="Enter Location..."  type="text" name="search"/> -->
+  
+
     <div class="QuestionContainer">
-     <p>Question : U happy today?</p>
+      <p>How's Your day?</p>
     </div>
 
     <div class="buttonStorage">
-        <button class="choice1" type="submit" value="choice1" >Happy</button>
-        <button class="choice2" type="submit" value="choice2" >Sad</button>
-        <button class="choice3" type="submit" value="choice3" >Chill</button>
-        <button class="choice4" type="submit" value="choice4" >Anger</button>
+        <button class="choice" id="choice1" type="submit" value="choice1" >Happy</button>
+        <button class="choice" id="choice2" type="submit" value="choice2" >Sad</button>
+        <button class="choice" id="choice3" type="submit" value="choice3" >Chill</button>
     </div>
-
-
-    <!-- <button style="top:70px" onclick="play()">Play Audio</button> -->
-
-    <!-- <iframe
-    frameborder="0"
-    width="420"
-    height="220"
-    src="https://drive.google.com/file/d/1NGCvMBHJoG38jc96n9jv1cnchBOou-rk/preview"
-    style="opacity: 1;">
-   </iframe> -->
-
-<!-- 
-    <audio controls preload="auto">
-    <source src="https://drive.google.com/file/d/1NGCvMBHJoG38jc96n9jv1cnchBOou-rk/preview" 
-    type="audio/mp3">
-    <p>Your browser does not support the audio element.</p>
-    </audio> -->
-    
-    <div >
-      <img class="imageanimation" src="img/Farminwinterseason.jpg" alt="BG">
-    </div>
+  
     
     <label id="volume" class="swap">
       <!-- this hidden checkbox controls the state -->
@@ -80,13 +63,11 @@
       </svg>
     </label>
 
-    
+    <div >
+      <img class="imageAnimation" src="img/Farminwinterseason.jpg" alt="BG">
+    </div>
 
-    <!-- <audio id="myAudio">
-      <source src="Music/Rain Strom Thunder.mp3" type="audio/mp3">
-       Your browser does not support the audio element.
-    </audio>
-     -->
+
 
   </main>
   <script src="script.js"></script>

@@ -26,9 +26,7 @@ choice4.addEventListener('click', function(){
 let audioOn = document.querySelector('.swap-on');
 let audioOff = document.querySelector('.swap-off');
 let audiobtn = document.querySelector('.swap');
-const audio = new Audio('/Music/RainStromThunder.mp3');
-
-
+const audio = new Audio('./Music/RainStromThunder.mp3');
 
 
 audioOn.addEventListener('click', function(){
@@ -53,18 +51,3 @@ audioOff.addEventListener('click', function(){
     }
     
 });
-
-
-// let audioOff = document.querySelector('.swap-off')
-// audioOn.addEventListener('click', function(){
-//     // console.log(audioOff);
-//     // var audio = new Audio('/Music/Rain Strom Thunder.mp3');
-//     // console.log(audio)
-//     // audio.pause();
-// });
-
-// function play() {
-//     var audio = new Audio('/Music/Rain Strom Thunder.mp3');
-//     audio.play();
-//   }
-

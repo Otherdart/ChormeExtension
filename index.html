@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link
+  href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css"
+  rel="stylesheet"
+  type="text/css"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="QuestionContainer">
+     <p>Question : U happy today?</p>
+    </div>
+
+    <div class="buttonStorage">
+        <button class="choice1" type="submit" value="choice1" >Happy</button>
+        <button class="choice2" type="submit" value="choice2" >Sad</button>
+        <button class="choice3" type="submit" value="choice3" >Chill</button>
+        <button class="choice4" type="submit" value="choice4" >Anger</button>
+    </div>
+
+
+    <!-- <button style="top:70px" onclick="play()">Play Audio</button> -->
+
+    <!-- <iframe
+    frameborder="0"
+    width="420"
+    height="220"
+    src="https://drive.google.com/file/d/1NGCvMBHJoG38jc96n9jv1cnchBOou-rk/preview"
+    style="opacity: 1;">
+   </iframe> -->
+
+<!-- 
+    <audio controls preload="auto">
+    <source src="https://drive.google.com/file/d/1NGCvMBHJoG38jc96n9jv1cnchBOou-rk/preview" 
+    type="audio/mp3">
+    <p>Your browser does not support the audio element.</p>
+    </audio> -->
+    
+    <div >
+      <img class="imageanimation" src="img/Farminwinterseason.jpg" alt="BG">
+    </div>
+    
+    <label id="volume" class="swap">
+      <!-- this hidden checkbox controls the state -->
+      <input type="checkbox" />
+
+      <!-- volume on icon -->
+      <svg
+        class="swap-on fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M14,3.23V5.29C16.89,6.15 19,8.83 19,12C19,15.17 16.89,17.84 14,18.7V20.77C18,19.86 21,16.28 21,12C21,7.72 18,4.14 14,3.23M16.5,12C16.5,10.23 15.5,8.71 14,7.97V16C15.5,15.29 16.5,13.76 16.5,12M3,9V15H7L12,20V4L7,9H3Z"
+        />
+      </svg>
+
+      <!-- volume off icon -->
+      <svg
+        class="swap-off fill-current"
+        xmlns="http://www.w3.org/2000/svg"
+        width="48"
+        height="48"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3,9H7L12,4V20L7,15H3V9M16.59,12L14,9.41L15.41,8L18,10.59L20.59,8L22,9.41L19.41,12L22,14.59L20.59,16L18,13.41L15.41,16L14,14.59L16.59,12Z"
+        />
+      </svg>
+    </label>
+
+    <!-- <audio id="myAudio">
+      <source src="Music/Rain Strom Thunder.mp3" type="audio/mp3">
+       Your browser does not support the audio element.
+    </audio>
+     -->
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
